@@ -15,6 +15,9 @@
   }
 }
 @media (max-width: 426px) {
+  html {
+    font-size: 60%;
+  }
   .transform {
     transform: translateX(+100%) !important;
   }
