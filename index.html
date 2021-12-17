@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MapTodo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="queries.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script defer src="test.js"></script>
+  </head>
+  <body class="flex">
+    <div class="menuIcon">
+      <svg
+        class="menu-Icon"
+        xmlns="http://www.w3.org/2000/svg"
+        x="0px"
+        y="0px"
+        width="50"
+        height="50"
+        viewBox="0 0 172 172"
+        style="fill: #000000"
+      >
+        <g
+          fill="none"
+          fill-rule="nonzero"
+          stroke="none"
+          stroke-width="1"
+          stroke-linecap="butt"
+          stroke-linejoin="miter"
+          stroke-miterlimit="10"
+          stroke-dasharray=""
+          stroke-dashoffset="0"
+          font-family="none"
+          font-weight="none"
+          font-size="none"
+          text-anchor="none"
+          style="mix-blend-mode: normal"
+        >
+          <path d="M0,172v-172h172v172z" fill="none"></path>
+          <g fill="#ffffff">
+            <path
+              d="M0,25.8v17.2h172v-17.2zM0,77.4v17.2h172v-17.2zM0,129v17.2h172v-17.2z"
+            ></path>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div id="map"></div>
+    <aside class="tasksContainer transform">
+      <div class="logoBox">
+        <img class="logo" src="img/logo.PNG" />
+      </div>
+      <form class="form hide">
+        <input
+          class="userInputHeading"
+          type="text"
+          max="47"
+          placeholder="Where to"
+        />
+        <input
+          class="userInput"
+          type="text"
+          max="47"
+          placeholder="Enter task"
+        />
+        <button class="submitButton" type="submit">OK</button>
+      </form>
+      <div class="tasks">
+        <p class="clearAll">Clear all</p>
+      </div>
+      <footer>
+        <p>Copyright by <strong>Mohammed Musaib Ali</strong></p>
+      </footer>
+    </aside>
+  </body>
+</html>

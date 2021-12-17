@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+aside {
+  position: relative;
+  overflow-y: scroll;
+  transition: all 0.5s ease;
+}
+.hidden {
+  display: none !important;
+}
+.submitButton {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+.flex-clm {
+  flex-direction: column;
+}
+#map {
+  width: 75%;
+  height: 100vh;
+  /* background-color: blue; */
+}
+.tasksContainer {
+  width: 25%;
+  height: 100vh;
+  background-color: #2d3439;
+  padding: 2rem;
+  transform: none !important;
+}
+.tasksContainer .tasks {
+  font-size: 2rem;
+}
+
+/* POPUP */
+.leaflet-popup .leaflet-popup-content-wrapper {
+  background-color: #2d3439;
+  color: white;
+  width: auto;
+  /* padding-right: 1rem; */
+  /* border-radius: 5px; */
+}
+
+.leaflet-popup .leaflet-popup-content {
+  font-size: 1.5rem;
+}
+
+.leaflet-popup .leaflet-popup-tip {
+  background-color: #2d3439;
+}
+/* .popUp {
+} */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  justify-content: center;
+  background-color: #42484d;
+  padding: 1rem;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  transition: all 1s ease;
+  transition: all 0.5s, transform 1ms;
+}
+.form.hide {
+  transform: translateY(-30rem);
+  height: 0;
+  padding: 0 2.25rem;
+  margin-bottom: 0;
+  opacity: 0;
+}
+input {
+  padding: 0.8rem 1rem;
+  border: none;
+  background-color: rgb(214, 222, 224);
+  /* color: black; */
+  /* border-bottom: 2px solid gray; */
+}
+.task {
+  margin-bottom: 2rem;
+  background-color: #42484d;
+  padding: 1rem;
+  border-left: 4px solid #00c46a;
+  border-radius: 4px;
+}
+
+.taskHeading {
+  font-size: 1.6rem;
+  margin-bottom: 0.2rem;
+  color: #00c46a;
+}
+.clearAll {
+  text-align: right;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #00c46a;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.iconTrashBox {
+  display: flex;
+  justify-content: flex-end;
+}
+.trashIcon {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+.taskDesc {
+  font-size: 1.8rem;
+  color: white;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  padding: 1.4rem;
+  color: #aaa;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.logoBox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.logo {
+  width: 12rem;
+}
+
+.menuIcon {
+  display: none;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  padding: 1rem;
+  background-color: #2d3439;
+  z-index: 9999999;
+  border-radius: 1.4rem;
+}
+.menu-Icon {
+  width: 3rem;
+  height: 3rem;
+  fill: white;
+  stroke: white;
+}
